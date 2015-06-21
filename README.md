@@ -5,7 +5,7 @@ View the Skype messages on a browser via **Q**uery **SKYPE** sqlite database in 
 ## 概要
 Skype が持つデータベースファイル main.db を参照し、発言内容をブラウザから見れるようにするもの。
 
-![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/screenshot.png?token=ACyzLjJwm9kwGVBsrWIM_j80oKjzToGAks5Vj68vwA%3D%3D)
+![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/screenshot.png)
 
 ## [Skype for Web](https://web.skype.com/) との違い
 ### メリット
@@ -47,9 +47,9 @@ service httpd start
 ### qskype 設定
 ブラウザから行う。基本的にはガイドに従っていけばOK。
 
-![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/1.png?token=ACyzLjJwm9kwGVBsrWIM_j80oKjzToGAks5Vj68vwA%3D%3D)
-![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/2.png?token=ACyzLjJwm9kwGVBsrWIM_j80oKjzToGAks5Vj68vwA%3D%3D)
-![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/3.png?token=ACyzLjJwm9kwGVBsrWIM_j80oKjzToGAks5Vj68vwA%3D%3D)
-![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/4.png?token=ACyzLjJwm9kwGVBsrWIM_j80oKjzToGAks5Vj68vwA%3D%3D)
-![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/5.png?token=ACyzLjJwm9kwGVBsrWIM_j80oKjzToGAks5Vj68vwA%3D%3D)
-![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/6.png?token=ACyzLjJwm9kwGVBsrWIM_j80oKjzToGAks5Vj68vwA%3D%3D)
+![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/1.png)
+![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/2.png)
+![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/3.png)
+![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/4.png)
+![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/5.png)
+![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/6.png)
