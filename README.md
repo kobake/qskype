@@ -5,7 +5,7 @@ View the Skype messages on a browser via **Q**uery **SKYPE** sqlite database in 
 ## 概要
 Skype が持つデータベースファイル main.db を参照し、発言内容をブラウザから見れるようにするもの。
 
-![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/qskype.png)
 
 ## [Skype for Web](https://web.skype.com/) との違い
 ### メリット
