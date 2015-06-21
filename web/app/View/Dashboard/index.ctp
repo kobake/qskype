@@ -102,3 +102,5 @@ EOS;
 	<?php endif; ?>
 
 </div>
+
+<?php echo $this->element('foot'); ?>

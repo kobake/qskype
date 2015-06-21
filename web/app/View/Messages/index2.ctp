@@ -231,5 +231,7 @@ function timeformat_ymd($timestamp){
 			</div>
 		</div>
 	</div>
+	<?php echo $this->element('foot'); ?>
 
 </div>
+
