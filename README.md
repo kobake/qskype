@@ -53,3 +53,7 @@ service httpd start
 ![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/4.png)
 ![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/5.png)
 ![screenshot](https://raw.githubusercontent.com/kobake/qskype/master/screenshots/6.png)
+
+## 関連記事
+- [Not Skype for Web, but qskype - clock-up-blog](http://blog.clock-up.jp/entry/2015/06/21/qskype)
+- [Skype の SQLiteファイル main.db の構造 - Qiita](http://qiita.com/kobake@github/items/e6d96508710d6cb5c2e8)
