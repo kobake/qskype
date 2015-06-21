@@ -1,0 +1,9 @@
+_gomi
+node_modules
+/nbproject/private/
+/web/app/webroot/files/test_image
+/web/app/webroot/files/page
+.idea/workspace.xml
+_Migrations
+.idea
+

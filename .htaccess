@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule     (.*\.(css|js|woff|woff2))   web/app/webroot/$1 [L]
+
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^ index.php    [L]
+</IfModule>
+
+AddDefaultCharset utf-8
+AddType "text/javascript; charset=utf-8" .js

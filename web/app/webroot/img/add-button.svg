@@ -1,0 +1,5 @@
+<svg width="50" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <polygon  points="0,0 50,50 0,100" style="fill:#ccc; stroke:#888; stroke-width:1" />
+  <polyline points="10,50 30,50" style="stroke:#666; stroke-width:3" />
+  <polyline points="20,39 20,61" style="stroke:#333; stroke-width:2" />
+</svg>

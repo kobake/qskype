@@ -1,0 +1,191 @@
+﻿body
+{
+	font-family: 'ＭＳ ゴシック';
+}
+
+#content{
+	margin-top: 70px; /* navbar が1段の場合 */
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.pagination{
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+
+h2{
+	margin-bottom: 16px;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* フラッシュメッセージ */
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+#flashMessage
+{
+	background-color: #ddf;
+	border-radius: 6px;
+	padding: 12px 18px;
+}
+#flashMessage{
+	margin-bottom: 16px;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* navbar */
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+.navbar{
+	z-index: 9999;
+}
+
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* 索引 */
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+.indent{
+	margin-left: 20px;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* ナビゲーション */
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
+.nav li
+{
+	color: #888;
+}
+.nav li div.state
+{
+	width: 25px;
+	height: 25px;
+	border-radius: 15px;
+	background-color: #9f9;
+	position: relative;
+	top: 9px;
+	display: inline-block;
+	border: 1px solid #444;
+	opacity: 0.8;
+}
+
+.navbar-brand.active{
+	color: #fff;
+}
+
+/* 常に縦スクロールバー表示 */
+html {
+	overflow-y:scroll;
+}
+
+
+/* フッタ */
+html, body{
+	height: 100%;	/* 縦の高さを100% */
+	width: 100%;	/* 横の幅を100% */
+}
+#all{
+	position: relative;		/* フッター部の配置用に定義 */
+	min-height: 100%;		/* 縦の表示領域を100% */
+	padding-bottom: 40px;
+}
+
+
+a.non-hover:hover{
+	background-color: #eee ! important;
+}
+
+
+
+
+/* 削除メッセージ */
+#flash-wrapper {
+	position: fixed;
+	z-index: 10000;
+	top: 8px;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+#flashMessage {
+	padding: 0px;
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #66c;
+	font-size: 16pt;
+	color: #444;
+	opacity: 0.8;
+}
+#flashMessage.error {
+	border: 1px solid #e66;
+	background-color: #fee;
+	height: auto;
+	line-height: inherit;
+	text-align: left;
+	font-size: 12pt;
+	padding: 8px;
+	max-height: 600px;
+	overflow: auto;
+}
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* 全体レイアウト */
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+#container {
+	margin-left: 16px;
+	margin-right: 8px;
+	width: auto;
+}
+
+.sidebar {
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	display: block;
+	padding: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: #f5f5f5;
+	border-right: 1px solid #eee;
+}
+/* Sidebar navigation */
+.nav-sidebar {
+	margin-right: -21px;
+	/* 20px padding + 1px border */
+	margin-left: -20px;
+}
+.nav-sidebar > li > a {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+	color: #fff;
+	background-color: #428bca;
+}
+.nav-sidebar > li,
+.nav-sidebar > li > a {
+	overflow: hidden;
+	white-space: nowrap;
+}
+#container {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#content {
+	margin-top: 50px;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+	background: rgba(255, 255, 255, 0.2);
+}
+

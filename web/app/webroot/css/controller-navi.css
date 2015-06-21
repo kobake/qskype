@@ -1,0 +1,12 @@
+.navi .printfooter,
+.navi #siteSub,
+.navi #contentSub,
+.navi #jump-to-nav,
+.navi #toc
+{
+	display: none;
+}
+
+.navi .mw-editsection{
+	display: none;
+}

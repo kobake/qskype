@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img{
+	float: right;
+	margin-left: 8px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #888;
+}
+div{
+	float: right;
+	width: 100%;
+	height: 2px;
+	background-color: #888;
+	margin-top: 8px;
+	margin-top: 8px;
+}
+body{
+	background-color: #afa;
+</style>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+jQuery(function(){
+	// アンカー設置
+	var index = 0;
+	jQuery('div').each(function(){
+		jQuery(this).attr('id', "div" + index);
+		index++;
+	});
+	// 現在アンカー
+	window.g_anchor = 0;
+	window.g_anchorMax = index - 1;
+	
+	// キーイベント
+	jQuery('html').keydown(function(e){
+		switch(e.which) {
+		case 38: // up
+		case 39: // right
+			console.log("right");
+			// 前へ
+			window.g_anchor--;
+			if(window.g_anchor < 0)window.g_anchor = 0;
+			// スクロール
+			var target = jQuery('#div' + window.g_anchor);
+			var targetOffset = target.offset().top;
+			console.log("offset = " + targetOffset);
+			$('html,body').animate({ scrollTop: targetOffset }, 'fast');
+			return false;
+
+		case 40: // down
+		case 37: // left
+			// 次へ
+			window.g_anchor++;
+			if(window.g_anchor > window.g_anchorMax)window.g_anchor = window.g_anchorMax;
+			// スクロール
+			var target = jQuery('#div' + window.g_anchor);
+			var targetOffset = target.offset().top;
+			console.log("offset = " + targetOffset);
+			$('html,body').animate({ scrollTop: targetOffset }, 'fast');
+			return false;
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div></div>
+<img src='ajax-loader.gif'>
+<img src='_pdf.png'>
+<img src='cake.icon.png'>
+<div></div>
+<img src='cake.power.gif'>
+<img src='comment-loading.gif'>
+<div></div>
+<img src='comment.png'>
+<img src='comment2.png'>
+<div></div>
+<img src='drop-image.png'>
+<img src='grid.png'>
+<div></div>
+<img src='images.jpg'>
+<img src='left.png'>
+<div></div>
+<img src='line-cross.png'>
+<img src='line-h.png'>
+<div></div>
+<img src='line-v.png'>
+<img src='loading_spinner.gif'>
+<div></div>
+<img src='mail.png'>
+<img src='manual.png'>
+<div></div>
+<img src='manual2.png'>
+<img src='manual_copy.png'>
+<div></div>
+<img src='manual_copy_copy.png'>
+<img src='menu.png'>
+<div></div>
+<img src='node_bar.png'>
+<img src='node_box.png'>
+<div></div>
+<img src='node_circle.png'>
+<img src='node_dia.png'>
+<div></div>
+<img src='node_homebase.png'>
+<img src='page-arrow.png'>
+<div></div>
+<img src='page-delete.png'>
+<img src='page-pen.png'>
+<div></div>
+<img src='page-rotate.png'>
+<img src='pdf.gif'>
+<div></div>
+<img src='pdf.png'>
+<img src='pdf_.png'>
+<div></div>
+<img src='pdf_big.png'>
+<img src='right.png'>
+<div></div>
+<img src='sample.png'>
+<img src='state_green.png'>
+<div></div>
+<img src='test-error-icon.png'>
+<img src='test-fail-icon.png'>
+<div></div>
+<img src='test-pass-icon.png'>
+<img src='test-skip-icon.png'>
+<div></div>
+
+</body>
+</html>
