@@ -80,9 +80,9 @@ App::build(array(
  *
  */
 CakePlugin::loadAll(); // Loads all plugins at once
-CakePlugin::load('DebugKit');
+// CakePlugin::load('DebugKit');
 CakePlugin::load('BoostCake');
-CakePlugin::load('Migrations');
+// CakePlugin::load('Migrations');
 CakePlugin::load('Search');
 CakePlugin::load('Upload');
 
