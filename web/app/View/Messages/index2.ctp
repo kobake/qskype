@@ -154,7 +154,7 @@ function timeformat_ymd($timestamp){
 
 		<div id="search-box" style="margin-top: 24px;">
 			<!-- 検索ボックス：本当はStack Overflowのボックスをマネしたい -->
-			<form class="navbar-form" role="search" method="GET" action="/messages/search/<?php echo h($currentChat); ?>">
+			<form class="navbar-form" role="search" method="GET" action="<?php echo $this->webroot;?>messages/search/<?php echo h($currentChat); ?>">
 				<div class="input-group">
 					<input type="text"
 					       class="form-control"
