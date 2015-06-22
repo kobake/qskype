@@ -69,6 +69,15 @@ function timeformat_ymd($timestamp){
 		margin-top: 16px;
 		font-size: 14pt;
 	}
+
+	/* アンカー */
+	/* http://pixelflips.com/blog/anchor-links-with-a-fixed-header */
+	.anchor{
+		display: block;
+		height: 100px; /*same height as header*/
+		margin-top: -100px; /*same height as header*/
+		visibility: hidden;
+	}
 </style>
 
 <div id="wrapper">
@@ -195,6 +204,7 @@ function timeformat_ymd($timestamp){
 				<div class="chat-body">
 					<div class="messages">
 						<?php $lastYmd = ''; ?>
+						<?php $lastHhmm = ''; ?>
 						<?php foreach ($messages as $message): ?>
 							<?php $row = $message['Message']; ?>
 
@@ -213,11 +223,27 @@ function timeformat_ymd($timestamp){
 							<?php endif; ?>
 
 							<!-- メッセージ -->
+							<?php $yyyymmdd = date('Ymd', $row['timestamp']); ?>
+							<?php $hhmm = date('Hi', $row['timestamp']); ?>
+							<?php
+							$timeId = '';
+							if($hhmm !== $lastHhmm){
+								$timeId = "t{$hhmm}";
+							}
+							if($timeId !== ''){
+								echo "<span class='anchor' id='{$timeId}'></span>";
+							}
+							?>
 							<div class="message" id="row-<?php echo h($row['id']); ?>" data-id="<?php echo h($row['id']); ?>">
-								<div class="message-time"><?php echo timeformat($message['Message']['timestamp']); ?></div>
-								<div class="message-user"><?php echo h($message['Message']['from_dispname']); ?></div>
-								<div class="message-body"><?php echo h2_with_tag($message['Message']['body_xml']); ?></div>
+								<div class="message-time">
+									<a href="<?php echo $this->webroot;?>messages/index2/<?php echo h($currentChat); ?>/<?php echo h($yyyymmdd); ?>#t<?php echo h($hhmm);?>">
+										<?php echo timeformat($row['timestamp']); ?>
+									</a>
+								</div>
+								<div class="message-user"><?php echo h($row['from_dispname']); ?></div>
+								<div class="message-body"><?php echo h2_with_tag($row['body_xml']); ?></div>
 							</div>
+							<?php $lastHhmm = $hhmm; ?>
 
 						<?php endforeach; ?>
 					</div>
