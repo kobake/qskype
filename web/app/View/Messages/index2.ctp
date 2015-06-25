@@ -60,6 +60,27 @@ function timeformat_ymd($timestamp){
 	.chat-body{
 
 	}
+	.chat-body .quote-frame{
+		display: block;
+		/* border: 1px solid #ccc; */
+		margin-top: 4px;
+		margin-bottom: 4px;
+		border-left: 6px solid #ccc;
+		padding-left: 10px;
+	}
+	.chat-body .quote-body{
+		display: block;
+		color: #444;
+	}
+	.chat-body .quote-details{
+		display: block;
+		padding: 2px 0px;
+		font-size: 8pt;
+		color: #888;
+	}
+	.chat-body legacyquote{
+		display: none;
+	}
 
 	/* 日付区切り */
 	.date-sep:first-child{
@@ -78,6 +99,7 @@ function timeformat_ymd($timestamp){
 		margin-top: -100px; /*same height as header*/
 		visibility: hidden;
 	}
+
 </style>
 
 <div id="wrapper">
@@ -261,3 +283,24 @@ function timeformat_ymd($timestamp){
 
 </div>
 
+
+<script>
+	// 引用の展開 //
+	$(function(){
+		$('quote').each(function(){
+			var author = $(this).attr('author');
+			var authorname = $(this).attr('authorname');
+			var timestamp = $(this).attr('timestamp');
+			var t = new Date(timestamp * 1000);
+			var tp = sprintf("%s, %04d年%d月%d日 %02d:%02d", authorname, t.getFullYear(), t.getMonth() + 1, t.getDate(), t.getHours(), t.getMinutes());
+
+			var $frame = $('<div class="quote-frame"></div>');
+			$(this).after($frame);
+			$frame.append($(this));
+			$(this).addClass('quote-body');
+			$frame.append($('<div class="quote-details">' + tp + '</div>'));
+			// console.log(tp);
+			// console.log($(this).html());
+		});
+	});
+</script>

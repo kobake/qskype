@@ -61,6 +61,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	?>
 
 	<!-- lib -->
+	<script src="<?php echo $this->webroot; ?>js/sprintf.min.js"></script>
 	<script src="<?php echo $this->webroot; ?>jquery/jquery-2.1.3.js"></script> <!-- escapeHTML -->
 	<script>
 		jQuery(function(){

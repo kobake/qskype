@@ -206,6 +206,10 @@ if (!function_exists('h')) {
 
 		// タグの開始
 		$text = str_replace('&lt;a ', '<a target="_blank" ', $text); // aタグの開始は許可 (ついでに target = _blank とする)
+		$text = str_replace('&lt;quote ', '<quote ', $text); // quoteタグの開始は許可
+		$text = str_replace('&lt;quote&gt;', '<quote>', $text); // quoteタグの開始は許可
+		$text = str_replace('&lt;legacyquote ', '<legacyquote ', $text); // legacyquoteタグの開始は許可
+		$text = str_replace('&lt;legacyquote&gt;', '<legacyquote>', $text); // legacyquoteタグの開始は許可
 		$text = str_replace('&lt;/', '</', $text); // 閉じタグの開始はすべて展開
 
 		// タグの終了
